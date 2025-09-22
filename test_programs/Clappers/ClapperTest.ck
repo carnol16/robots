@@ -1,5 +1,5 @@
 OscOut out;
-("localhost", 50000) => out.dest;
+("chuckServer.local", 50000) => out.dest;
 
 fun void clapperSend(int note, int vel){
     out.start("/clappers");

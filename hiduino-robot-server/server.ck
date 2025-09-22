@@ -13,9 +13,6 @@ Clappers clap;
 JackGuitar jtar;
 JackBass jbas;
 JackPerc jperc;
-
-RattleTron rattle;
-Tammy tammy;
 // SnapperBot sbot1;
 
 OscRecv orec;
@@ -37,9 +34,6 @@ clap.init(orec,toClient);
 jtar.init(orec,toClient);
 jbas.init(orec,toClient);
 jperc.init(orec,toClient);
-
-rattle.init(orec,toClient);
-tammy.init(orec,toClient);
 
 // sbot1.init(orec,toClient);
 

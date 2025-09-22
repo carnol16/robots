@@ -1,5 +1,5 @@
 OscOut out;
-("localhost", 50000) => out.dest;
+("chuckServer.local", 50000) => out.dest;
 
 
 fun void tSend(int note, int vel){
@@ -27,9 +27,8 @@ fun void tSend(int note, int vel){
 // 13 is
 while(true) {
     for (int i; i < 14; i++){
-        tSend(i, 120);
-        100::ms => now;
-        <<< "note", i, "sent", "" >>>;
+        tSend(1, 120);
+        1000::ms => now;
     }
 }
 

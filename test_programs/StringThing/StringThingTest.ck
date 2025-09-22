@@ -1,7 +1,7 @@
 // StringThing.ck
 
 OscOut out;
-("localhost", 50000) => out.dest;
+("chuckServer.local", 50000) => out.dest;
 
 fun void stSend(int note, int vel){
     out.start("/stringthing");

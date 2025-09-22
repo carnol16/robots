@@ -28,7 +28,7 @@ else <<<"Failed to open IAC Bus","">>>;
 <<<"","">>>;
 
 // connect to robot server
-("localhost",50000) => oout.dest;
+("chuckServer.local",50000) => oout.dest;
 
 
 // spork main loop
